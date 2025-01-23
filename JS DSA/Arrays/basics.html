@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+    //Two ways of creating an array
+    const myArr1 = [1,2,3,4,5,6];
+    const myArr2 = new Array(2,3,4,5,6,7)
+
+    console.log(myArr2[3])
+
+    const myArr3 = myArr1;
+    console.log(myArr3[2])
+    
+    //SHALLOW COPY
+    myArr3[2] = 99;
+    console.log(myArr1)
+
+
+    //ARRAY METHODS
+
+    //push for adding an element to the end of the array
+    myArr1.push(66);
+    console.log(myArr1);
+
+    //pop for the removal of last element of array
+    myArr1.pop();
+    console.log(myArr1);
+
+
+    //unshift to add element at the beginning of the array
+    myArr1.unshift(9)
+    console.log(myArr1);
+
+
+    //shift for removal of the first element
+
+    myArr1.shift()
+    console.log(myArr1);
+
+
+    //QUESTIONING ARRAYS FOR BOOLEAN VALUES AND OTHER VALUES
+
+    //includes is used to check if array contains certain element or not
+    console.log(myArr1.includes(4));
+
+    //indexOf is used to find the index of certain element
+    console.log(myArr1.indexOf(99))
+
+    //join is used to make a string out of an array
+
+    console.log(myArr1.join());
+    console.log(myArr1);
+
+    //SLICE
+
+
+    console.log('using slice and splice')
+    console.log(myArr1.slice(1,4))
+    console.log(myArr1)
+
+    console.log(myArr1.splice(1,4))
+
+    console.log(myArr1)
+
+
+
+
+  </script>
+</body>
+</html>

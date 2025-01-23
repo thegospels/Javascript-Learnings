@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Map in JS</title>
+</head>
+<body>
+
+  <script>
+
+    const nums = [1,2,3,4,5,6,7,8,9,10,11,12,13,14,15,16,17,17,18];
+
+    const newnums = nums.map(item => item*3);
+    console.log(newnums)
+    
+
+    const bodyFile = document.getElementsByTagName('body')[0];
+
+
+    bodyFile.innerHTML = `<div>${newnums}</div>`;
+
+    let chain = []
+
+
+    let trialChain = nums.map(item => item*2)
+    .map(item => {
+      if(item > 30){
+        chain.push(item)
+        return item
+      }
+      return null
+
+    }).filter(item => item != null)
+
+    console.log(trialChain)
+    console.log(chain)
+
+
+
+  </script>
+  
+</body>
+</html>
