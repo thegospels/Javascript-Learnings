@@ -19,4 +19,4 @@ let prom1 = new Promise((resolve,reject) => {
   console.log(text);
 }).catch((err)=>{
   console.log(`Man we got an error ${err}`)
-})
+});
